@@ -168,3 +168,11 @@
 .details-btn:hover {
   background: #374151;
 }
+.not-found {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.not-found h1 {
+  color: #6366f1;
+}
