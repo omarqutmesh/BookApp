@@ -4,14 +4,12 @@
       <div class="book-icon">📖</div>
 
       <div class="book-content">
-        <h2>{{ book.title }}</h2>
+        <a [routerLink]="['/book', book.id]">{{ book.title }}</a>
 
         <p>
           <span>Author</span>
           {{ book.author }}
         </p>
-
-        <button class="details-btn" [routerLink]="['/book', book.id]">View Details</button>
       </div>
     </div>
   }

@@ -28,6 +28,7 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 
   transition: 0.2s ease;
 }
@@ -75,10 +76,12 @@
   font-size: 30px;
   margin-bottom: 20px;
 }
-.book-content h2 {
+.book-content a {
   margin: 8px 0 15px;
   font-size: 22px;
   color: #1f2937;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .book-content p {
@@ -89,60 +92,13 @@
 .book-content p span {
   font-weight: bold;
   color: #374151;
-}
-.details-btn {
-  width: 100%;
-  padding: 11px;
-
-  border: none;
-  border-radius: 10px;
-
-  background: #1f2937;
-  color: white;
-
-  font-size: 14px;
-  font-weight: 600;
-
-  cursor: pointer;
-  transition: 0.2s ease;
 }
 .book-id {
   font-size: 13px;
   font-weight: bold;
   color: #6366f1;
 }
-.book-content h2 {
-  margin: 8px 0 15px;
-  font-size: 22px;
-  color: #1f2937;
-}
 
-.book-content p {
-  margin-bottom: 20px;
-  color: #6b7280;
-}
-
-.book-content p span {
-  font-weight: bold;
-  color: #374151;
-}
-
-.details-btn {
-  width: 100%;
-  padding: 11px;
-
-  border: none;
-  border-radius: 10px;
-
-  background: #1f2937;
-  color: white;
-
-  font-size: 14px;
-  font-weight: 600;
-
-  cursor: pointer;
-  transition: 0.2s ease;
-}
 .back-btn {
   display: flex;
   justify-content: center;
@@ -164,9 +120,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.details-btn:hover {
-  background: #374151;
 }
 .not-found {
   display: flex;
