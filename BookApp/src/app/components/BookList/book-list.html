@@ -1,0 +1,18 @@
+<div class="books-container">
+  @for (book of books(); track book.id) {
+    <div class="book-card">
+      <div class="book-icon">📖</div>
+
+      <div class="book-content">
+        <h2>{{ book.title }}</h2>
+
+        <p>
+          <span>Author</span>
+          {{ book.author }}
+        </p>
+
+        <button class="details-btn">View Details</button>
+      </div>
+    </div>
+  }
+</div>
