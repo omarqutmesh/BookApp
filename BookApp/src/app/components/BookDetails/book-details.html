@@ -1,0 +1,22 @@
+<div class="books-container">
+  @if (book(); as currentBook) {
+    <div class="book-card">
+      <div class="book-icon">📖</div>
+
+      <div class="book-content">
+        <span class="book-id"> Book #{{ currentBook.id }} </span>
+
+        <h2>{{ currentBook.title }}</h2>
+
+        <p>
+          <span>Author</span>
+          {{ currentBook.author }}
+        </p>
+
+        <div class="back-btn">
+          <button routerLink="/">Back</button>
+        </div>
+      </div>
+    </div>
+  }
+</div>
