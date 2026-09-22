@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Book } from '../model/Book';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BookService {
-  books: Book[] = [
+  private books = [
     {
       id: 1,
       title: 'Clean Code',
@@ -23,10 +22,10 @@ export class BookService {
       author: 'Martin Fowler',
     },
   ];
-  getAll(): Observable<Book[]> {
+  getAll(): Observable<any[]> {
     return of(this.books);
   }
-  getById(id: number): Observable<Book | undefined> {
+  getById(id: number): Observable<any | undefined> {
     return of(this.books.find((book) => book.id == id));
   }
 }
